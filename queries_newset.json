@@ -1,0 +1,428 @@
+[
+    {
+        "premise": "X is a student.",
+        "query": "Is X a person?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 1,
+        "type": "instance-class classification"
+    },
+    {
+        "premise": "X is a faculty member.",
+        "query": "Is X a person?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 2,
+        "type": "instance-class classification"
+    },
+    {
+        "premise": "X is a person.",
+        "query": "Is X an employee?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 3,
+        "type": "instance-class classification"
+    },
+    {
+        "premise": "X is a work.",
+        "query": "Is X a graduate level course?",
+        "correct_answer": "No",
+        "level": 2,
+        "id": 4,
+        "type": "instance-class classification"
+    },
+    {
+        "premise": "X works for Y.",
+        "query": "Is X a member of Y?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 5,
+        "type": "instance-property classification"
+    },
+    {
+        "premise": "X is the head of Y.",
+        "query": "Is X a member of Y?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 6,
+        "type": "instance-property classification"
+    },
+    {
+        "premise": "X is a member of Y.",
+        "query": "Does X work for Y?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 7,
+        "type": "instance-property classification"
+    },
+    {
+        "premise": "X is a member of Y.",
+        "query": "Is X the head of Y?",
+        "correct_answer": "No",
+        "level": 2,
+        "id": 8,
+        "type": "instance-property classification"
+    },
+    {
+        "premise": "X is person. X works for Y. Y is an organization.",
+        "query": "Is X an employee?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 9,
+        "type": "instance-class equivalence"
+    },
+    {
+        "premise": "X is person.",
+        "query": "Is X a chair?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 10,
+        "type": "instance-class equivalence"
+    },
+    {
+        "premise": "X is person. X is taking Y. Y is a teaching course.",
+        "query": "Is X a student?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 11,
+        "type": "instance-class equivalence"
+    },
+    {
+        "premise": "X is an undergraduate student.",
+        "query": "Is X a person?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 12,
+        "type": "instance-class equivalence"
+    },
+    {
+        "premise": "X is an undergraduate student.",
+        "query": "Is X taking a teaching course?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 13,
+        "type": "instance-class equivalence"
+    },
+    {
+        "premise": "X is taking a teaching course.",
+        "query": "Is X a student?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 14,
+        "type": "instance-class equivalence"
+    },
+    {
+        "premise": "X is taking a teaching course.",
+        "query": "Is X an undergraduate student?",
+        "correct_answer": "No",
+        "level": 2,
+        "id": 15,
+        "type": "instance-class equivalence"
+    },
+    {
+        "premise": "'Person' is a class",
+        "query": "Is 'Undergraduate Student' a subclass of 'Person'?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 16,
+        "type": "class subsumption"
+    },
+    {
+        "premise": "'Schedule' is a class",
+        "query": "Is 'Teaching Course' a subclass of 'Schedule'?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 17,
+        "type": "class subsumption"
+    },
+    {
+        "premise": "'Work' is a class",
+        "query": "Is 'Graduate Level Courses' a subclass of 'Work'?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 18,
+        "type": "class subsumption"
+    },
+    {
+        "premise": "'Faculty Member' is a class",
+        "query": "Is 'Person' a subclass of 'Faculty Member'?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 19,
+        "type": "class subsumption"
+    },
+    {
+        "premise": "'Is The Head Of' is a property",
+        "query": "Is 'Member Of' a subproperty of 'Is The Head Of'?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 20,
+        "type": "property subsumption"
+    },
+    {
+        "premise": "'Member Of' is a property",
+        "query": "Is 'Is the Head Of' a subproperty of 'Member Of'?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 21,
+        "type": "property subsumption"
+    },
+    {
+        "premise": "'Has A Degree From' is a property",
+        "query": "Is 'Has A Doctoral Degree From' a subproperty of 'Has A Degree From'?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 22,
+        "type": "property subsumption"
+    },
+    {
+        "premise": "'Has A Masters Degree From' is a property",
+        "query": "Is 'Has A Doctoral Degree From' a subproperty of 'Has A Masters Degree From'?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 23,
+        "type": "property subsumption"
+    },
+    {
+        "premise": "X is member of Y.",
+        "query": "Does Y have member X?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 24,
+        "type": "inverse property"
+    },
+    {
+        "premise": "X has a degree from Y.",
+        "query": "Does Y have as alumns X?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 25,
+        "type": "inverse property"
+    },
+    {
+        "premise": "X is member of Y.",
+        "query": "Does Y have as alumns X?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 26,
+        "type": "inverse property"
+    },
+    {
+        "premise": "X has a degree from Y.",
+        "query": "Does Y have member X?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 27,
+        "type": "inverse property"
+    },
+    {
+        "premise": "X is part of Y. Y is part of Z.",
+        "query": "Is X part of Z?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 28,
+        "type": "transitive property"
+    },
+    {
+        "premise": "X is part of Y. X is part of Z.",
+        "query": "Is Y part of Z?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 29,
+        "type": "transitive property"
+    },
+    {
+        "premise": "X is part of Y. Y is part of Z. Z is part of T",
+        "query": "Is X part of T?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 30,
+        "type": "transitive property"
+    },
+    {
+        "premise": "X is part of Y. X is part of Z. Z is part of T",
+        "query": "Is Y part of T?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 31,
+        "type": "transitive property"
+    },
+    {
+        "premise": "X is part of Y. X is part of Z. Z is part of T",
+        "query": "Is T part of Y?",
+        "correct_answer": "No",
+        "level": 2,
+        "id": 32,
+        "type": "transitive property"
+    },
+    {
+        "premise": "X is part of Y. X is part of Z. Z is part of T",
+        "query": "Is T part of X?",
+        "correct_answer": "No",
+        "level": 2,
+        "id": 33,
+        "type": "transitive property"
+    },
+    {
+        "premise": "X has a degree from Y. X is a person.",
+        "query": "Is Y a university?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 34,
+        "type": "domain-range"
+    },
+    {
+        "premise": "X has a degree from Y. Y is a university.",
+        "query": "Is X a person?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 35,
+        "type": "domain-range"
+    },
+    {
+        "premise": "X has a degree from Y. Y is a university.",
+        "query": "Is X a work?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 36,
+        "type": "domain-range"
+    },
+    {
+        "premise": "X has a degree from Y. X is a person.",
+        "query": "Is Y a teaching course?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 37,
+        "type": "domain-range"
+    },
+    {
+        "premise": "X has a research project Y. Y is a research work.",
+        "query": "Is X a research group?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 38,
+        "type": "domain-range"
+    },
+    {
+        "premise": "X teaches Y. Y is a teaching course.",
+        "query": "Is X a faculty member?",
+        "correct_answer": "Yes",
+        "level": 1,
+        "id": 39,
+        "type": "domain-range"
+    },
+    {
+        "premise": "X teaches Y. Y is a teaching course.",
+        "query": "Is X graduate student?",
+        "correct_answer": "No",
+        "level": 1,
+        "id": 40,
+        "type": "domain-range"
+    },
+    {
+        "premise": "X teaches Y. Y is a teaching course.",
+        "query": "Is X an employee?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 41,
+        "type": "domain-range + instance-class classification"
+    },
+    {
+        "premise": "X teaches Y. X is a faculty member.",
+        "query": "Is Y a work?",
+        "correct_answer": "No",
+        "level": 2,
+        "id": 42,
+        "type": "domain-range + instance-class classification"
+    },
+    {
+        "premise": "X is being advised by Y. X is a person.",
+        "query": "Is Y a faculty member?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 43,
+        "type": "domain-range + instance-class classification"
+    },
+    {
+        "premise": "X is being advised by Y. Y is a professor.",
+        "query": "Is X a schedule?",
+        "correct_answer": "No",
+        "level": 2,
+        "id": 44,
+        "type": "domain-range + instance-class classification"
+    },
+    {
+        "premise": "X is an administrative staff worker.",
+        "query": "Is X a person?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 45,
+        "type": "instance-class equivalence + instance-class classification"
+    },
+    {
+        "premise": "X is an administrative staff worker.",
+        "query": "Is X an organization?",
+        "correct_answer": "No",
+        "level": 2,
+        "id": 46,
+        "type": "instance-class equivalence + instance-class classification"
+    },
+    {
+        "premise": "X is an university department. X is a part of Y. Z is a part of X. T is affiliated with Z.",
+        "query": " Is T a person?",
+        "correct_answer": "Yes",
+        "level": 3,
+        "id": 47,
+        "type": "transitive property + instance-class classification + domain-range"
+    },
+    {
+        "premise": "X is an university department. X is a part of Y. Z is a part of X.",
+        "query": " Is Z an organization?",
+        "correct_answer": "Yes",
+        "level": 3,
+        "id": 48,
+        "type": "transitive property + instance-class classification + domain-range"
+    },
+    {
+        "premise": "X is a university department. X is a part of Y. Z is a part of X. T is affiliated with Z.",
+        "query": "Is T a course?",
+        "correct_answer": "No",
+        "level": 3,
+        "id": 49,
+        "type": "transitive property + instance-class classification + domain-range"
+    },
+    {
+        "premise": "X is a part of Y. Z is a part of X. T is affiliated with Z. X is a university department.",
+        "query": " Is T a course?",
+        "correct_answer": "No",
+        "level": 3,
+        "id": 50,
+        "type": "transitive property + instance-class classification + domain-range"
+    },
+    {
+        "premise": "X was written by Y. Y is being advised by Z.",
+        "query": "Is Y a person?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 51,
+        "type": "domain-range"
+    },
+    {
+        "premise": "X has a member Y. Y is about Z.",
+        "query": "Is Y a person?",
+        "correct_answer": "No",
+        "level": 2,
+        "id": 52,
+        "type": "domain-range"
+    },
+    {
+        "premise": "X teaches Y. Z lists as a course Y.",
+        "query": "Is Y a teaching course?",
+        "correct_answer": "Yes",
+        "level": 2,
+        "id": 53,
+        "type": "domain-range"
+    }
+
+
+]
